@@ -21,12 +21,16 @@
     </form>
     <p><a href="{% url 'password_reset' %}">Forgot your password</a></p>
 </div>
-<div class="google">
+<div class="social">
     <ul>
         <li class="google">
             <a href="{% url 'social:begin' 'google-oauth2' %}">Sign In With Google</a>
         </li>
     </ul>
-
+    <ul>
+        <li class="facebook">
+            <a href="{% url 'social:begin' 'facebook' %}">Sign In With Facebook</a>
+        </li>
+    </ul>
 </div>
 {% endblock %}

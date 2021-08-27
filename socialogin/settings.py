@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-+3x2y)$@5y2gt!v)2=nk1#8=6*r(r@t^cyc3o0+8a)2hdn+!q2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['tinhdungtichphoi.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['phongjr.org','127.0.0.1']
 
 
 # Application definition
@@ -154,8 +154,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 AUTHENTICATION_BACKENDS=['django.contrib.auth.backends.ModelBackend','account.authentication.EmailAuthBackend',
-                        'social_core.backends.google.GoogleOAuth2',]
+                        'social_core.backends.google.GoogleOAuth2',
+                        'social_core.backends.facebook.FacebookOAuth2']
 
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '258145899894-qdibdqiffoapp90o4j5g2j122uht4nbm.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'KpomtFbkzHglWc0-d6jQsb7l'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '1053813876307-fv8s04n6avf6ml77vnfgfm2agdi4c93i.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'YOhW3eWZQALHLDd1ViW-Qsr9'
+
+SOCIAL_AUTH_FACEBOOK_KEY = '817753215563563'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'c87ddb78b78bf38abfb39a9ccf26ac9e'
